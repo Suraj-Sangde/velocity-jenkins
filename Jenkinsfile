@@ -18,7 +18,7 @@ pipeline {
 					}
 				stage('restart-httpd'){
 				steps{
-				sh 'service httpd restart'
+				sudo sh 'service httpd restart'
 				}
 				}
 				}
