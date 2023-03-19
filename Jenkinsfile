@@ -16,7 +16,7 @@ pipeline {
 					sh 'cp -r qa.html /var/www/html'
 					}
 					}
-				stage('restart httpd'){
+				stage('restart-httpd'){
 				steps{
 				sh 'service httpd restart'
 				}
